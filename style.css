@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb (243,243,243);
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.instagramBody{
+    display: flex ;
+    align-items: start;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.instaCelIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.instaCelIcon img{
+    height: 40rem;
+}
+.instaContinue{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 39rem;
+}
+.group{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border:1px solid lightgray;
+}
+.group:nth-child(1){
+    min-height: 19rem;
+}
+.profilepicture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profilepicture img{
+    height:8rem;
+}
+.instaLogo{
+    height: 3rem;
+}
+.instaLogin{
+    background-color: #0095f6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+.instaRemove{
+    color: #0095f6;
+}
+.not_Account{
+    color: rgb(160,160,160);
+}
+.typeBlue {
+    color: #0095f6;
+}
+.getTheApp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+.download{
+    display:flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+.store {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.store:nth-child(1){
+    background-image: url("img/apStore.jpg");
+}
+.store:nth-child(2){
+    background-image: url("img/goStore.jpg");
+}
+
+@media(max-width:1024px){
+    .instagramBody{
+        width: 90%;
+    }
+}
+@media(max-width:650px) {
+    .instagramBody{
+        width: 90%;
+    }
+    .instaCelIcon{
+        display: none;
+    }
+    .instaContinue{
+        width: 100%;
+    }
+}
